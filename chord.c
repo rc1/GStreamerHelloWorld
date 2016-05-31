@@ -146,8 +146,8 @@ main (int   argc,
     /* Set up the pipeline */
 
     /* Set the audio test source params*/
-    g_object_set (G_OBJECT (low_source), "volume", 0.4, "freq", 220.0, "timestamp-offset", 2000000000, NULL);
-    g_object_set (G_OBJECT (mid_source), "volume", 0.3, "freq", 440.0, "timestamp-offset", 1000000000, NULL);
+    g_object_set (G_OBJECT (low_source), "volume", 0.4, "freq", 220.0, NULL); // timestamp-offset not working on the pi. Perhaps 32?
+    g_object_set (G_OBJECT (mid_source), "volume", 0.3, "freq", 440.0, NULL);
     g_object_set (G_OBJECT (high_source), "volume", 0.2, "freq", 600.0, NULL);
 
     /* we add a message handler THIS NEEDS TO ADD THE OTHER PIPELINES */
