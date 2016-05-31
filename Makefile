@@ -19,7 +19,7 @@ bin/note: note.c
 	gcc $(CFLAGS) -o bin/note note.c $(LDFLAGS);
 
 bin/chord: chord.c
-	gcc $(CFLAGS) -o bin/chord chord.c $(LDFLAGS); 
+	gcc $(CFLAGS) -o bin/chord chord.c $(LDFLAGS) -lm; 
 
 .PHONY: clean
 clean:
